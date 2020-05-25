@@ -1,0 +1,87 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 5
+}
+
+order += "wireless _first_"
+order += "fedora_updates"
+order += "cpu_temperature 0"
+order += "disk /"
+order += "disk /home"
+order += "load"
+order += "memory"
+order += "dpms"
+order += "keyboard_locks"
+#order += "battery all"
+order += "backlight"
+order += "battery_level"
+order += "volume_status"
+order += "clock"
+
+battery_level {
+	threshold_bad = 20
+	threshold_degraded = 30
+	blocks = "_▁▂▃▄▅▆▇█"
+	format = "{percent}% {time_remaining} {icon}"
+	hide_seconds = True
+	notify_low_level = True
+	cache_timeout = 30
+}
+
+keyboard_locks {
+	format = '[\?if=caps_lock&color=good CAPS|\?color=bad CAPS]'
+}
+
+fedora_updates {
+	format = "DNF: {updates}"	
+}
+
+wireless _first_ {
+        format_up = "W: (%quality at %essid, %bitrate) %ip"
+        format_down = "W: down"
+}
+
+ethernet _first_ {
+        format_up = "E: %ip (%speed)"
+        format_down = "E: down"
+}
+
+battery all {
+        format = "%status %percentage %remaining"
+}
+
+disk "/" {
+        format = "/ = %avail"
+}
+
+disk "/home" {
+	format = "H = %free"
+}
+
+load {
+        format = "%1min"
+}
+
+memory {
+        format = "%used"
+        threshold_degraded = "1G"
+        format_degraded = "MEMORY < %available"
+}
+
+clock {
+        format_time = "%Y-%m-%d %H:%M:%S"
+	
+}
+
+cpu_temperature 0 {
+	format = "%degrees °C"
+	max_threshold = "80"
+}
