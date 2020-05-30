@@ -28,8 +28,8 @@ font pango:DejaVu 0
 
 # Hide all borders
 default_border normal 0
-default_floating_border none
-hide_edge_borders both
+#default_floating_border none
+#hide_edge_borders both
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
