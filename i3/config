@@ -40,6 +40,9 @@ bindsym $mod+Return exec xfce4-terminal
 # start firefox
 bindsym $mod+Shift+f exec firefox
 
+# Start private firefox
+bindsym $mod+Shift+p exec firefox --private-window
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
