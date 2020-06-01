@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/git-scripts:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin:$HOME/Small-scripts
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/connor/.oh-my-zsh"
@@ -29,8 +29,7 @@ ZSH_THEME="alanpeabody"
 # Uncomment the following line to automatically update without prompting.
 # DISABLE_UPDATE_PROMPT="true"
 
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+# Uncomment the following line to change how often to auto-update (in days).  # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS=true
@@ -97,6 +96,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
+
+eval $(thefuck --alias)
+
 autoload -U add-zsh-hook
 add-zsh-hook -Uz chpwd (){ ls; }
+alias dot='PATH="HOME/.config/dotgit/bin:$PATH" git --git-dir="$HOME/.config/dotgit/repo" --work-tree="$HOME"'
+alias upgrade="sudo dnf upgrade -y"
+alias quiet='2>&1 1>/dev/null'
+alias vim=nvim
+alias monitors='xrandr --output DP1 --right-of DP2; xrandr --output DP2 --rotate left; xrandr --output DP1 --pos 1080x700'
