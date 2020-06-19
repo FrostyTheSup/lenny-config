@@ -1,6 +1,15 @@
+order += "wireless _first_"
+order += "disk /"
+order += "disk /home"
+order += "load"
+order += "memory"
 order += "cpu_temperature 0"
+order += "fedora_updates"
+order += "keyboard_locks"
 order += "backlight"
 order += "battery_level"
+order += "volume_status"
+order += "clock"
 
 backlight {
 	brightness_initial = 25
@@ -19,11 +28,6 @@ battery_level {
 keyboard_locks {
 	format = '[\?if=caps_lock&color=good CAPS|\?color=bad CAPS]'
 }
-
-battery all {
-        format = "%status %percentage %remaining"
-}
-
 
 cpu_temperature 0 {
 	format = "%degrees °C"

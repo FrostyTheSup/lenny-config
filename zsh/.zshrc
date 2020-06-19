@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin:$HOME/Small-scripts
+export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin:$HOME/git-scripts
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/connor/.oh-my-zsh"
