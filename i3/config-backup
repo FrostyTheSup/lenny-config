@@ -43,6 +43,9 @@ bindsym $mod+Shift+f exec firefox
 # Start private firefox
 bindsym $mod+Shift+p exec firefox --private-window
 
+# Start netflix
+bindsym $mod+Shift+n exec google-chrome www.netflix.com/browse
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -209,3 +212,4 @@ bar {
 }
 
 exec_always --no-startup-id xsetroot -solid "#000000"
+exec --no-startup-id xss-lock -- i3lock -c 000000 -u &

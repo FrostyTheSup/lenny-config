@@ -8,7 +8,7 @@
 
 general {
         colors = true
-        interval = 5
+        interval = 1
 }
 
 order += "wireless _first_"
@@ -88,4 +88,9 @@ clock {
 cpu_temperature 0 {
 	format = "%degrees °C"
 	max_threshold = "80"
+}
+
+volume_status {
+	cache_timeout = 1
+	format_muted = "🔇"
 }
