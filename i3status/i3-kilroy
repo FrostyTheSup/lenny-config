@@ -1,0 +1,11 @@
+order += "cpu_temperature max"
+
+keyboard_locks {
+	format = '[\?if=num_lock&color=good NUM|\?color=bad NUM]'
+	format += ' [\?if=caps_lock&color=good CAPS|\?color=bad CAPS]'
+}
+
+cpu_temperature max {
+        format = "%degrees °C"
+        path = "/sys/devices/virtual/thermal/thermal_zone3/temp"
+}

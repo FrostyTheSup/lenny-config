@@ -1,0 +1,16 @@
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+bindsym Shift+XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
+bindsym $mod+XF86Launch1 exec --no-startup-id pavucontrol
+bindsym XF86AudioMicMute exec --not-startup-id pactl set-source-mute 1 toggle # mute mic
+
+# Brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -inc -10
+
+# Print screen
+bindsym Print exec xfce4-screenshooter
+
+# Open webcam
+bindsym XF86WebCam exec --no-startup-id cheese

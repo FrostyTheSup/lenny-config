@@ -1,0 +1,31 @@
+order += "cpu_temperature 0"
+order += "backlight"
+order += "battery_level"
+
+backlight {
+	brightness_initial = 25
+}
+
+battery_level {
+	threshold_bad = 20
+	threshold_degraded = 30
+	blocks = "_▁▂▃▄▅▆▇█"
+	format = "{percent}% {time_remaining} {icon}"
+	hide_seconds = True
+	notify_low_level = True
+	cache_timeout = 30
+}
+
+keyboard_locks {
+	format = '[\?if=caps_lock&color=good CAPS|\?color=bad CAPS]'
+}
+
+battery all {
+        format = "%status %percentage %remaining"
+}
+
+
+cpu_temperature 0 {
+	format = "%degrees °C"
+	max_threshold = "80"
+}
