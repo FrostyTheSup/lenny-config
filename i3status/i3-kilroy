@@ -1,4 +1,15 @@
+order += "wireless _first_"
+order += "disk /"
+order += "disk /home"
+order += "memory"
+order += "load"
 order += "cpu_temperature max"
+order += "fedora_updates"
+order += "keyboard_locks"
+order += "dpms"
+order += "volume_status"
+order += "tztime local"
+
 
 keyboard_locks {
 	format = '[\?if=num_lock&color=good NUM|\?color=bad NUM]'
