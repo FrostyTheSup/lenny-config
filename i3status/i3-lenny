@@ -9,7 +9,7 @@ order += "keyboard_locks"
 order += "backlight"
 order += "battery_level"
 order += "volume_status"
-order += "tztime local"
+order += "clock"
 
 backlight {
 	brightness_initial = 25
