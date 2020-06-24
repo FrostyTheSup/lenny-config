@@ -101,8 +101,9 @@ eval $(thefuck --alias)
 
 autoload -U add-zsh-hook
 add-zsh-hook -Uz chpwd (){ ls; }
-alias dot='PATH="HOME/.config/dotgit/bin:$PATH" git --git-dir="$HOME/.config/dotgit/repo" --work-tree="$HOME"'
 alias upgrade="sudo dnf upgrade -y"
 alias quiet='2>&1 1>/dev/null'
 alias vim=nvim
-alias monitors='xrandr --output DP1 --right-of DP2; xrandr --output DP2 --rotate left; xrandr --output DP1 --pos 1080x700'
+alias kilroy='ssh connor@kilroy'
+alias lenny='ssh connor@lenny'
+alias sirver='ssh connor@sirver'
