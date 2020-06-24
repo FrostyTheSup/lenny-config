@@ -1,5 +1,5 @@
 # Blank screen
-bindsym $mod+Shift+b exec ~/Small-scripts/blank
+bindsym $mod+Shift+b exec ~/git-scripts/blank
 
 # assigns workspaces to monitors
 workspace 1 output DP2
@@ -10,5 +10,5 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
-exec ~/Small-scripts/startup.sh
+exec ~/git-scripts/startup.sh
 exec --no-startup-id i3-msg 'workspace $ws1; exec xfce4-terminal -e=htop; workspace $ws1; exec xfce4-terminal; workspace $ws1; exec pavucontrol'
