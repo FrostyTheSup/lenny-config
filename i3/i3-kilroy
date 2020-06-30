@@ -2,8 +2,8 @@
 bindsym $mod+Shift+b exec ~/git-scripts/blank
 
 # assigns workspaces to monitors
-workspace 1 output DP2
-workspace 10 output DP1
+workspace 1 output DP-2
+workspace 10 output DP-1
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
