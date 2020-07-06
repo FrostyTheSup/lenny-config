@@ -42,7 +42,7 @@ bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+p exec firefox --private-window
 
 # Start Netflix
-bindsym $mod+Shift+n exec google-chrome
+bindsym $mod+Shift+n exec google-chrome www.netflix.com/browse
 
 # kill focused window
 bindsym $mod+Shift+q kill
