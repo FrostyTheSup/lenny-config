@@ -8,7 +8,7 @@ order += "fedora_updates"
 order += "keyboard_locks"
 order += "dpms"
 order += "volume_status"
-order += "tztime local"
+order += "clock"
 
 
 keyboard_locks {
