@@ -107,3 +107,4 @@ alias vim=nvim
 alias kilroy='ssh connor@kilroy'
 alias lenny='ssh connor@lenny'
 alias sirver='ssh connor@sirver'
+alias let-me-live-again='tmux attach -t lenny'
