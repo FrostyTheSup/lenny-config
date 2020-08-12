@@ -42,7 +42,10 @@ bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+p exec firefox --private-window
 
 # Start Netflix
-bindsym $mod+Shift+n exec google-chrome
+bindsym $mod+Shift+n exec google-chrome www.netflix.com/browse
+
+# Open Spotify
+bindsym $mod+Shift+s exec flatpak run com.spotify.Client
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -77,6 +80,10 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+
+# change workspace
+bindsym $mod+Ctrl+Left workspace prev
+bindsym $mod+Ctrl+Right workspace next
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -140,6 +147,18 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
+
+# move focused container with keypad
+bindsym $mod+Mod2+KP_1 move container to workspace $ws1
+bindsym $mod+Mod2+KP_2 move container to workspace $ws2
+bindsym $mod+Mod2+KP_3 move container to workspace $ws3
+bindsym $mod+Mod2+KP_4 move container to workspace $ws4
+bindsym $mod+Mod2+KP_5 move container to workspace $ws5
+bindsym $mod+Mod2+KP_6 move container to workspace $ws6
+bindsym $mod+Mod2+KP_7 move container to workspace $ws7
+bindsym $mod+Mod2+KP_8 move container to workspace $ws8
+bindsym $mod+Mod2+KP_9 move container to workspace $ws9
+bindsym $mod+Mod2+KP_0 move container to workspace $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

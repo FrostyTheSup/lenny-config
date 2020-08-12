@@ -107,4 +107,9 @@ alias vim=nvim
 alias kilroy='ssh connor@kilroy'
 alias lenny='ssh connor@lenny'
 alias sirver='ssh connor@sirver'
+<<<<<<< HEAD
 alias let-me-live-again='tmux attach -t lenny'
+=======
+alias switch-to-speaker='pactl set-sink-port 0 analog-output-speaker'
+alias switch-to-headphones='pactl set-sink-port 0 analog-output-headphones'
+>>>>>>> 23ff59fc697cb52c1c77f2d752ba8e3719730451
