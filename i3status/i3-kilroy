@@ -7,6 +7,7 @@ order += "cpu_temperature max"
 order += "fedora_updates"
 order += "keyboard_locks"
 order += "dpms"
+order += "hueshift"
 order += "volume_status"
 order += "clock"
 

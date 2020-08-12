@@ -107,3 +107,5 @@ alias vim=nvim
 alias kilroy='ssh connor@kilroy'
 alias lenny='ssh connor@lenny'
 alias sirver='ssh connor@sirver'
+alias switch-to-speaker='pactl set-sink-port 0 analog-output-speaker'
+alias switch-to-headphones='pactl set-sink-port 0 analog-output-headphones'

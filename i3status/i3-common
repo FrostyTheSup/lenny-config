@@ -35,3 +35,8 @@ volume_status {
 	format_muted = "🔇"
 }
 
+hueshift {
+	format = '\?color=color_temperature * {color_temperature}K'
+	minimum = 3000
+	maximum = 10000
+}
