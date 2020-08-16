@@ -17,6 +17,7 @@ backlight {
 }
 
 battery_level {
+	battery_id=all
 	threshold_bad = 20
 	threshold_degraded = 30
 	blocks = "_▁▂▃▄▅▆▇█"
