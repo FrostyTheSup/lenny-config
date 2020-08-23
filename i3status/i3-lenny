@@ -14,12 +14,13 @@ order += "clock"
 
 backlight {
 	brightness_initial = 25
+	cache_timeout = 1
 }
 
 battery_level {
 	battery_id=all
-	threshold_bad = 20
-	threshold_degraded = 30
+	threshold_bad = 5
+	threshold_degraded = 15
 	blocks = "_▁▂▃▄▅▆▇█"
 	format = "{percent}% {time_remaining} {icon}"
 	hide_seconds = True
