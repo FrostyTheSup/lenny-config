@@ -11,4 +11,4 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
 exec ~/git-scripts/startup.sh
-exec --no-startup-id i3-msg 'workspace $ws1; exec xfce4-terminal -e=htop; workspace $ws1; exec xfce4-terminal; workspace $ws1; exec pavucontrol'
+exec --no-startup-id i3-msg 'workspace $ws1; exec xfce4-terminal -e=glances; workspace $ws1; exec xfce4-terminal'
