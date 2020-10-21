@@ -47,6 +47,9 @@ bindsym $mod+Shift+n exec google-chrome www.netflix.com/browse
 # Open Spotify
 bindsym $mod+Shift+s exec flatpak run com.spotify.Client
 
+# Open Thunar
+bindsym $mod+Shift+t exec thunar
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
