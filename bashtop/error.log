@@ -1,0 +1,4 @@
+ 
+New instance of bashtop version: 0.9.25 Pid: 124929
+PSUTIL ERROR! Command: get_disks(exclude='squashfs')
+not sure how to interpret line ' 259       0 nvme1n1 222 0 16864 96 4 0 0 2 0 116 100 0 0 0 0 4 2\n'
